@@ -42,6 +42,18 @@ export class ProverbController {
     return new ProverbDto(proverb);
   }
 
+  @Get('categories')
+  @ApiOperation({ summary: 'Get all categories' })
+  @ApiResponse({
+    status: 200,
+    description: 'Get an array of all categories',
+    type: String,
+    isArray: true,
+  })
+  getCategories(): string[] {
+    return Object.values(Category);
+  }
+
   @ApiOperation({ summary: 'Get proverbs by category' })
   @ApiResponse({
     status: 200,
