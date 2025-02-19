@@ -55,9 +55,9 @@ Or navigate to jad-russian-proverb-api/docker/docker-compose.yml and start it vi
 
 Start the NestJS application in development mode:
 ```bash
-npm run start\:dev
+npm run start:dev
 # or
-yarn start\:dev
+yarn start:dev
 ```
 The API will be available at http://localhost:3000.
 
