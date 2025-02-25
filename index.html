@@ -110,8 +110,8 @@
   <script>
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const btn = document.getElementById('toggleSwitch');
-    console.log(btn);
-    if (prefersDarkScheme) {
+
+    if (prefersDarkScheme && btn) {
       document.documentElement.setAttribute('data-theme', 'dark');
       btn.checked = prefersDarkScheme;
     }
