@@ -17,6 +17,8 @@ import { CacheModule } from '@nestjs/cache-manager';
       database: process.env.DATABASE_NAME,
       entities: [Proverb],
       synchronize: false,
+      ssl: true,
+      logging: true,
     }),
     CacheModule.register({
       isGlobal: true,
